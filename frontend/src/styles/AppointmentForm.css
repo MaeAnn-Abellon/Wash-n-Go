@@ -1,0 +1,104 @@
+/* Animation for pop-in effect */
+  @keyframes slideIn {
+    from {
+      transform: translate(-50%, -60%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+  /* Form elements */
+  
+  .appointment-form h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .appointment-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .appointment-form button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4dabf7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .appointment-form button:hover {
+    background-color: #339af0;
+  }
+  
+  .appointment-form .close-btn {
+    background-color: transparent;
+    color: #999;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .appointment-form .close-btn:hover {
+    color: #444;
+  }
+  .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+  }
+  
+ /* Close button in top-right corner of the modal */
+.appointment-form .close-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 1.5rem;
+    background: none !important;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    z-index: 10;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .appointment-form .close-btn:hover {
+    color: #e03131;
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,159 @@
+/* Page container with white background */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  height: 100vh;
+  padding: 20px;
+}
+
+.register-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 960px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* LEFT SIDE */
+.register-left {
+  flex: 1;
+  position: relative;
+  background-color: #5a4df4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 30px;
+  overflow: hidden;
+}
+
+.wave-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/wavy-left.svg') no-repeat bottom center;
+  background-size: cover;
+  z-index: 0;
+  opacity: 1;
+}
+
+.register-left-content {
+  z-index: 1;
+  text-align: left;
+}
+
+.register-left-content h1 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.register-left-content h2 {
+  font-size: 36px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.register-left-content p {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* RIGHT SIDE */
+.register-right {
+  flex: 1;
+  padding: 60px 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-right h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #4f46e5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.terms input {
+  margin-right: 8px;
+}
+
+.signup, .signin {
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+}
+
+.signin {
+  background: none;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+}
+
+.signin:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .register-box {
+    flex-direction: column;
+  }
+
+  .register-left {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .register-right {
+    padding: 40px 20px;
+  }
+
+  .register-left-content h2 {
+    font-size: 28px;
+  }
+}
